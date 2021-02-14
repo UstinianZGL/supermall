@@ -22,7 +22,6 @@
         <div slot="tabbarName" class="title">个人</div>
       </TabbarItem>
     </Tabbar>
-    <router-view></router-view>
   </div>
 </template>
 

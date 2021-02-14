@@ -47,7 +47,14 @@ export default {
       this.bscroll && this.bscroll.scrollTo(x,y,time);
     },
     finishPullingUp(){
-      this.bscroll && this.bscroll.finishPullUp()
+      this.bscroll && this.bscroll.finishPullUp();
+    },
+    refreshMass(){
+      console.log('refresh执行');
+      this.bscroll && this.bscroll.refresh();
+    },
+    getScrollY(){
+      return this.bscroll?this.bscroll.y:0;
     }
   }
 }
